@@ -1,0 +1,381 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/* Pink */
+/* Dark grey */
+/* Dark grey */
+/* Teal */
+/* Pink */
+/* Google Fonts -------- */
+/*
+font-family: 'Roboto', Helvetica, Arial, sans-serif;
+font-family: 'Roboto Condensed', Helvetica, Arial, sans-serif;
+font-family: 'Merriweather', serif;
+*/
+/* General Styling -------- */
+html {
+  margin: 0;
+  font: 1em/1.5 "Roboto", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  color: #404041;
+  letter-spacing: 0.05em; }
+
+html, body, .container, .sections, .homePage {
+  height: 100%; }
+
+.container, .sections, .homePage {
+  width: 100%; }
+
+a {
+  text-decoration: none;
+  color: #404041; }
+
+.sectionHeading {
+  text-align: center;
+  margin: 50px 0 20px; }
+  .sectionHeading h2 {
+    font-size: 2.1875rem;
+    text-transform: uppercase;
+    display: inline-block;
+    text-align: center; }
+
+strong {
+  font-weight: 500; }
+
+/* Nav -------- */
+nav {
+  background: rgba(64, 64, 65, 0.95);
+  width: 100%;
+  height: 40px;
+  position: fixed;
+  top: 0;
+  display: none;
+  z-index: 10; }
+  nav h4 {
+    float: left;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    color: white;
+    margin-top: 12px; }
+    nav h4 a {
+      color: #fff;
+      padding: 12px 15px; }
+      nav h4 a:hover {
+        background: #00A79D; }
+
+.menuList {
+  float: right; }
+  @media (max-width: 700px) {
+    .menuList {
+      background: rgba(64, 64, 65, 0.95);
+      width: 100%;
+      border-top: solid 2px white;
+      display: none; } }
+  .menuList li {
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    margin-top: 13px; }
+    @media (max-width: 700px) {
+      .menuList li {
+        display: block;
+        margin: 0; } }
+    .menuList li a {
+      color: #fff;
+      padding: 13px 15px; }
+      @media (max-width: 700px) {
+        .menuList li a {
+          display: block;
+          text-align: right;
+          width: 100%;
+          margin: 10px 0;
+          padding: 5px 15px; } }
+      .menuList li a:hover, .menuList li a:active {
+        background-color: #ED2A7B; }
+        @media (max-width: 700px) {
+          .menuList li a:hover, .menuList li a:active {
+            background: #ED2A7B;
+            border-bottom: none; } }
+
+@media (max-width: 700px) {
+  .menuIcon {
+    float: right;
+    background: transparent;
+    padding: 3px 8px;
+    margin: 4px 10px; }
+    .menuIcon span {
+      width: 22px;
+      height: 2px;
+      display: block;
+      background: #fff;
+      margin: 5px 0; }
+    .menuIcon:hover, .menuIcon:active {
+      border-radius: 4px; }
+      .menuIcon:hover span, .menuIcon:active span {
+        background: #fff; } }
+
+/* Home Page -------- */
+.homePage {
+  background: #ED2A7B url("../images/Hero1.jpg") center;
+  background-size: cover;
+  background-position-y: 20%; }
+
+h1 {
+  font-weight: 100;
+  font-size: 5rem;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 7px;
+  padding: 120px 20px 20px 20px;
+  color: #fff; }
+  @media (max-width: 550px) {
+    h1 {
+      font-size: 3rem;
+      letter-spacing: 5px;
+      padding: 100px 10px 40px 10px; } }
+
+.socialLinks {
+  text-align: center; }
+  .socialLinks .socialIcon {
+    width: 45px;
+    height: 45px; }
+    @media (max-width: 550px) {
+      .socialLinks .socialIcon {
+        width: 35px;
+        height: 35px; } }
+
+.arrow {
+  position: absolute;
+  left: 50%;
+  margin-left: -25px;
+  width: 45px;
+  height: 45px;
+  bottom: 50px; }
+
+/* Bio -------- */
+.bio {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 5% 20px; }
+  .bio h2 {
+    margin: 50px 0 30px;
+    line-height: 1.5;
+    color: #404041;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 2.1875rem; }
+    @media (max-width: 900px) {
+      .bio h2 {
+        font-size: 1.6rem;
+        padding: 0 5%; } }
+    .bio h2 span {
+      color: #fff;
+      background: #ED2A7B;
+      padding: 4px 5px 2px; }
+
+.bandBio {
+  letter-spacing: 0.075em;
+  float: left;
+  line-height: 1.6;
+  width: 50%;
+  padding-right: 2%; }
+  @media (max-width: 800px) {
+    .bandBio {
+      display: block;
+      width: 100%;
+      padding: 0 5%;
+      text-align: justify; } }
+  .bandBio p {
+    padding-bottom: 20px;
+    font-size: 0.9375rem; }
+
+.bandMembers {
+  width: 50%;
+  float: right;
+  letter-spacing: 0.095em;
+  line-height: 1.6;
+  padding-left: 2%; }
+  .bandMembers p {
+    padding-bottom: 10px;
+    font-size: 0.9375rem; }
+  @media (max-width: 800px) {
+    .bandMembers {
+      width: 100%;
+      margin: 0 auto;
+      text-align: center;
+      padding: 0 5%; }
+      .bandMembers .bioCont {
+        text-align: justify;
+        padding-bottom: 25px; } }
+  @media (min-width: 850px) {
+    .bandMembers .column1 {
+      width: 49%;
+      float: left; }
+    .bandMembers .column2 {
+      width: 49%;
+      float: right; } }
+
+/* hero -------- */
+.hero {
+  background: url("../images/Hero2.jpg");
+  background-size: cover;
+  background-position-y: 50%;
+  height: 500px; }
+  @media (max-width: 900px) {
+    .hero {
+      height: 400px; } }
+  @media (max-width: 500px) {
+    .hero {
+      height: 300px; } }
+
+/* Gigs -------- */
+.gigs {
+  padding: 50px 20px 20px; }
+  .gigs .sectionHeading {
+    color: #ED2A7B;
+    margin-top: 0; }
+  .gigs .secondaryHeader {
+    font-size: 1.4em;
+    font-weight: 300;
+    text-transform: uppercase; }
+  .gigs p {
+    text-align: center;
+    padding-bottom: 25px;
+    font-family: 'Merriweather', serif;
+    text-transform: uppercase; }
+  .gigs table {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto; }
+  .gigs p, .gigs table {
+    line-height: 1.24;
+    letter-spacing: 0.075em; }
+  .gigs tr {
+    min-height: 5rem; }
+    @media (max-width: 600px) {
+      .gigs tr {
+        padding: 10px 0; } }
+  .gigs td {
+    vertical-align: middle;
+    padding: 10px 2.5%; }
+    @media (max-width: 600px) {
+      .gigs td {
+        display: block;
+        text-align: center; } }
+
+.gigDate {
+  min-width: 100px; }
+  @media (max-width: 600px) {
+    .gigDate {
+      margin-top: 15px; } }
+
+@media (max-width: 600px) {
+  .gigInfo {
+    margin-bottom: 20px; } }
+.gigInfo a {
+  text-decoration: none; }
+  .gigInfo a:hover {
+    color: #00A79D; }
+
+/* Music -------- */
+.music {
+  background: #00A79D; }
+  .music .empty {
+    height: 75px;
+    background: #fff; }
+  .music .sectionHeading {
+    position: relative;
+    top: -25px;
+    margin: 0; }
+    .music .sectionHeading h2 {
+      background-color: #404041;
+      color: #fff;
+      padding: 10px 40px; }
+
+.songList {
+  text-align: center; }
+  .songList a {
+    text-decoration: none; }
+    .songList a:focus {
+      outline: none; }
+    .songList a p {
+      text-transform: uppercase;
+      font-family: 'Merriweather', serif;
+      color: #fff;
+      padding: 10px 0; }
+      .songList a p:hover, .songList a p:active {
+        color: #404041; }
+
+.songPopup {
+  position: relative;
+  background: #FFF;
+  padding: 20px;
+  width: auto;
+  max-width: 700px;
+  margin: 20px auto; }
+  .songPopup h3 {
+    text-transform: uppercase;
+    margin: 0 auto;
+    font-size: 1.3em;
+    line-height: 1.5;
+    padding-bottom: 10px;
+    text-align: center; }
+  .songPopup p {
+    padding-bottom: 10px;
+    text-align: center; }
+
+/* Gallery -------- */
+.photos {
+  text-align: center; }
+  .photos .sectionHeading {
+    margin: 0;
+    background-color: #00A79D;
+    padding-top: 50px; }
+    .photos .sectionHeading h2 {
+      background-color: #fff;
+      color: #404041;
+      padding: 10px 20px; }
+  .photos .bandPhotos {
+    margin: 0 auto; }
+  .photos img {
+    float: left;
+    width: 32.933%;
+    margin: .2%; }
+    @media (max-width: 600px) {
+      .photos img {
+        width: 49.2%;
+        margin: .4%; } }
+    .photos img:hover, .photos img:active {
+      opacity: 0.8; }
+
+/* Footer -------- */
+footer {
+  text-align: center;
+  padding: 1.5% 0;
+  background: #404041;
+  position: relative; }
+  footer .contactInfo {
+    text-align: center;
+    padding-bottom: 10px; }
+    footer .contactInfo .contactIcon {
+      width: 40px;
+      height: 40px; }
+  footer p {
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 0.8rem; }
+
+/* Clear Fix -------- */
+.cf:before,
+.cf:after {
+  content: " ";
+  display: table; }
+
+.cf:after {
+  clear: both; }
+
+.cf {
+  *zoom: 1; }
