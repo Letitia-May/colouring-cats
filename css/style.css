@@ -240,7 +240,8 @@ h1 {
   .gigs .secondaryHeader {
     font-size: 1.4em;
     font-weight: 300;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    padding-top: 10px; }
   .gigs p {
     text-align: center;
     padding-bottom: 25px;
