@@ -275,6 +275,7 @@ h1 {
 @media (max-width: 600px) {
   .gigInfo {
     margin-bottom: 20px; } }
+
 .gigInfo a {
   text-decoration: none; }
   .gigInfo a:hover {
