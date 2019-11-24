@@ -17,15 +17,21 @@ font-family: 'Merriweather', serif;
 /* General Styling -------- */
 html {
   margin: 0;
-  font: 1em/1.5 "Roboto", Helvetica, Arial, sans-serif;
+  font: 1em/1.5 'Roboto', Helvetica, Arial, sans-serif;
   font-weight: 300;
   color: #404041;
   letter-spacing: 0.05em; }
 
-html, body, .container, .sections, .homePage {
+html,
+body,
+.container,
+.sections,
+.homePage {
   height: 100%; }
 
-.container, .sections, .homePage {
+.container,
+.sections,
+.homePage {
   width: 100%; }
 
 a {
@@ -64,7 +70,7 @@ nav {
       color: #fff;
       padding: 12px 15px; }
       nav h4 a:hover {
-        background: #00A79D; }
+        background: #00a79d; }
 
 .menuList {
   float: right; }
@@ -94,10 +100,10 @@ nav {
           margin: 10px 0;
           padding: 5px 15px; } }
       .menuList li a:hover, .menuList li a:active {
-        background-color: #ED2A7B; }
+        background-color: #ed2a7b; }
         @media (max-width: 700px) {
           .menuList li a:hover, .menuList li a:active {
-            background: #ED2A7B;
+            background: #ed2a7b;
             border-bottom: none; } }
 
 @media (max-width: 700px) {
@@ -119,7 +125,7 @@ nav {
 
 /* Home Page -------- */
 .homePage {
-  background: #ED2A7B url("../images/Hero1.jpg") center;
+  background: #ed2a7b url("../images/Hero1.jpg") center;
   background-size: cover;
   background-position-y: 20%; }
 
@@ -173,7 +179,7 @@ h1 {
         padding: 0 5%; } }
     .bio h2 span {
       color: #fff;
-      background: #ED2A7B;
+      background: #ed2a7b;
       padding: 4px 5px 2px; }
 
 .bandBio {
@@ -235,7 +241,7 @@ h1 {
 .gigs {
   padding: 50px 20px 20px; }
   .gigs .sectionHeading {
-    color: #ED2A7B;
+    color: #ed2a7b;
     margin-top: 0; }
   .gigs .secondaryHeader {
     font-size: 1.4em;
@@ -251,7 +257,8 @@ h1 {
     width: 100%;
     max-width: 1000px;
     margin: 0 auto; }
-  .gigs p, .gigs table {
+  .gigs p,
+  .gigs table {
     line-height: 1.24;
     letter-spacing: 0.075em; }
   .gigs tr {
@@ -280,11 +287,11 @@ h1 {
 .gigInfo a {
   text-decoration: none; }
   .gigInfo a:hover {
-    color: #00A79D; }
+    color: #00a79d; }
 
 /* Music -------- */
 .music {
-  background: #00A79D; }
+  background: #00a79d; }
   .music .empty {
     height: 75px;
     background: #fff; }
@@ -313,7 +320,7 @@ h1 {
 
 .songPopup {
   position: relative;
-  background: #FFF;
+  background: #fff;
   padding: 20px;
   width: auto;
   max-width: 700px;
@@ -334,7 +341,7 @@ h1 {
   text-align: center; }
   .photos .sectionHeading {
     margin: 0;
-    background-color: #00A79D;
+    background-color: #00a79d;
     padding-top: 50px; }
     .photos .sectionHeading h2 {
       background-color: #fff;
@@ -345,11 +352,11 @@ h1 {
   .photos img {
     float: left;
     width: 32.933%;
-    margin: .2%; }
+    margin: 0.2%; }
     @media (max-width: 600px) {
       .photos img {
         width: 49.2%;
-        margin: .4%; } }
+        margin: 0.4%; } }
     .photos img:hover, .photos img:active {
       opacity: 0.8; }
 
@@ -373,7 +380,7 @@ footer {
 /* Clear Fix -------- */
 .cf:before,
 .cf:after {
-  content: " ";
+  content: ' ';
   display: table; }
 
 .cf:after {
