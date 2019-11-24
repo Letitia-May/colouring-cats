@@ -4,11 +4,11 @@
   box-sizing: border-box;
 }
 
-$colour-one: #ed2a7b; /* Pink */
-$colour-two: #404041; /* Dark grey */
-$colour-three: rgba(64, 64, 65, 0.95); /* Dark grey */
-$colour-four: #00a79d; /* Teal */
-$colour-five: rgba(237, 42, 123, 0.5); /* Pink */
+$colour-one: #ed2a7b;
+$colour-two: #404041;
+$colour-three: rgba(64, 64, 65, 0.95);
+$colour-four: #00a79d;
+$colour-five: rgba(237, 42, 123, 0.5);
 
 /* Google Fonts -------- */
 /*
@@ -30,13 +30,13 @@ html,
 body,
 .container,
 .sections,
-.homePage {
+.home {
   height: 100%;
 }
 
 .container,
 .sections,
-.homePage {
+.home {
   width: 100%;
 }
 
@@ -162,11 +162,26 @@ nav {
   }
 }
 
-/* Home Page -------- */
-.homePage {
-  background: $colour-one url('../images/Hero1.jpg') center;
+/* Home -------- */
+.home {
+  background: $colour-one url('../images/Hero.jpg') center;
   background-size: cover;
-  background-position-y: 20%;
+  background-position-x: 60px;
+}
+
+.overlay {
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(237, 42, 123, 0.7);
+  display: flex;
+}
+
+.home_content {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 20px;
 }
 
 h1 {
@@ -175,13 +190,13 @@ h1 {
   text-transform: uppercase;
   text-align: center;
   letter-spacing: 7px;
-  padding: 120px 20px 20px 20px;
+  padding-bottom: 20px;
   color: #fff;
 
   @media (max-width: 550px) {
     font-size: 3rem;
     letter-spacing: 5px;
-    padding: 100px 10px 40px 10px;
+    padding-bottom: 40px;
   }
 }
 
